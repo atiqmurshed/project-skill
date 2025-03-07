@@ -10,12 +10,6 @@
     <script src="https://kit.fontawesome.com/5990ddce1b.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
-    <!-- <style>
-        #id {
-            background-color: blue;
-        }
-    </style> -->
-
 </head>
 
 <body>
@@ -72,12 +66,18 @@
 
 
         <section id="id" class="shadow-md rounded-md w-312px h-460px grid grid-cols-2">
-            
+
         </section>
 
     </main>
     <!-- w-312px h-460px -->
-    <!-- Open the modal using ID.showModal() method -->
+
+    <div id="spiner" class="hidden">
+        <span class="loading loading-bars loading-md"></span>
+        <span class="loading loading-bars loading-lg"></span>
+        <span class="loading loading-bars loading-xl"></span>
+    </div>
+    <!-- Open the modal using ID.showModal() method details btn -->
     <button id="showModalData" class="btn hidden" onclick="customModal.showModal()">open modal</button>
     <dialog id="customModal" class="modal">
         <div class="modal-box">
@@ -85,14 +85,14 @@
             <div class="modal-action">
                 <form method="dialog">
                     <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn">Close</button>
+                    <button class="btn Cancel-btn">Cancel</button>
                 </form>
             </div>
         </div>
     </dialog>
 
 
-
+<!-- adop-btn -->
     <button id="showModal" class="btn hidden" onclick="custom.showModal()">open modal</button>
     <dialog id="custom" class="modal">
         <div class="modal-box">
@@ -107,46 +107,44 @@
     </dialog>
 
 
-
-
     <footer class="footer mx-auto text-base-content p-10 mx-auto bg-black">
         <div class="text-white ml-20 py-5">
-          <div class="flex gap-3 text-gray">
-            <img src="images/logo.webp" alt="">
-            <h2 class="font-bold text-xl text-white">Peddy</h2>
-          </div>
-  
-          <p>Location: av. Washington 165, NY CA</p>
-          <p>54003</p>
-          <p>Phone: +31 85 964 47 25</p>
-          <p>Email: info@yourdomain.com</p>
-          <p>Openings hours: 9.00 AM - 5.00 PM</p>
-          <!-- </div>
+            <div class="flex gap-3 text-gray">
+                <img src="images/logo.webp" alt="">
+                <h2 class="font-bold text-xl text-white">Peddy</h2>
+            </div>
+
+            <p>Location: av. Washington 165, NY CA</p>
+            <p>54003</p>
+            <p>Phone: +31 85 964 47 25</p>
+            <p>Email: info@yourdomain.com</p>
+            <p>Openings hours: 9.00 AM - 5.00 PM</p>
+            <!-- </div>
        <div> -->
-          <div class="flex gap-5">
-            <img src="./images/icons8-facebook-48.png" alt="facebook loading">
-            <img src="./images/icons8-twitter-48.png" alt="twiter loading">
-            <img src="./images/icons8-youtube-48.png" alt="youtube pic">
-            <img src="./images/icons8-instagram-48.png" alt="insta pic">
-          </div>
+            <div class="flex gap-5">
+                <img src="./images/icons8-facebook-48.png" alt="facebook loading">
+                <img src="./images/icons8-twitter-48.png" alt="twiter loading">
+                <img src="./images/icons8-youtube-48.png" alt="youtube pic">
+                <img src="./images/icons8-instagram-48.png" alt="insta pic">
+            </div>
         </div>
-  
-  
+
+
         <nav class="text-white py-10">
-          <h6 class="footer-title">useful links</h6>
-          <a class="link link-hover">Home</a>
-          <a href="AboutUs.html" class="link link-hover">About Us</a>
-          <a href="animal.html" class="link link-hover">Animals</a>
-          <a class="link link-hover">Foundation</a>
-          <a class="link link-hover">Contact</a>
+            <h6 class="footer-title">useful links</h6>
+            <a class="link link-hover">Home</a>
+            <a href="AboutUs.html" class="link link-hover">About Us</a>
+            <a href="animal.html" class="link link-hover">Animals</a>
+            <a class="link link-hover">Foundation</a>
+            <a class="link link-hover">Contact</a>
         </nav>
         <nav class="ml-16 py-10">
-          <h6 class="footer-title text-white">Drop a Message</h6>
-          <input class="w-52 rounded bg-neutral-900 p-4 h-10" type="text" placeholder="Enter your email">
-          <button class="btn btn-active btn-accent w-52 text-white font-bold text-xl">Subscribe</button>
+            <h6 class="footer-title text-white">Drop a Message</h6>
+            <input class="w-52 rounded bg-neutral-900 p-4 h-10" type="text" placeholder="Enter your email">
+            <button class="btn btn-active btn-accent w-52 text-white font-bold text-xl">Subscribe</button>
         </nav>
-  
-      </footer>
+
+    </footer>
     <a href="index.html"></a>
     <script src="Fetch.js"></script>
 </body>

@@ -15,6 +15,7 @@ function loadVideos() {
 }
 
 
+
 const LoadCategoryVideos = (id) => {
   // console.log(id)
   // alert(id);
@@ -42,7 +43,15 @@ const displayDetails = (video) => {
   console.log(video);
   const detailsContainer = document.getElementById('modal-content');
   detailsContainer.innerHTML = `
-  <img src=${video.image}/>
+  <img class="rounded-md" src=${video.image}/>
+  <div class="m-4 w-190px h-135px"> 
+  <p class="text-xl font-bold">${video.pet_name}</p>
+    <h2>${video.breed}</h2>
+    <p>Date:${video.date_of_birth}</p>
+    <p>Gender:${video.gender}</p>
+    <p>Price:${video.price}</p>
+  </div>
+  <h1 class="font-bold text-xl">Detail Information</h1>
   <p>${video.pet_details}</p>
   `;
   // way-1
@@ -51,6 +60,14 @@ const displayDetails = (video) => {
   document.getElementById('customModal').showModal();
 
 }
+
+
+// const adoptpic = () => {
+
+//   setTimeout(() => {
+//     document.getElementById('')
+//   }, 3000);
+// }
 
 
 const adoptPic = async (vi) => {
@@ -129,6 +146,7 @@ function displayVideos(videos) {
       src=${video.image}
       alt="" />
   <div class="m-4 w-190px h-135px"> 
+    <p class="font-bold">${video.pet_name}</p>
     <h2>${video.breed}</h2>
     <p>Date:${video.date_of_birth}</p>
     <p>Gender:${video.gender}</p>
@@ -164,10 +182,6 @@ function displayBtn(button) {
 
   });
 }
-
-
-
-
 
 
 loadVideos()
