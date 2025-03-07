@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new assignment-6</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5990ddce1b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- <style>
+        #id {
+            background-color: blue;
+        }
+    </style> -->
+
+</head>
+
+<body>
+
+    <nav class="mx-auto p-4 navbar bg-base-100">
+        <div class="navbar-start">
+            <img src="images/logo.webp" alt="">
+            <a class="btn btn-ghost text-xl">Paddy</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class=" menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end text-3xl">
+            <p><i class="fa-regular fa-circle-user"></i></p>
+        </div>
+    </nav>
+
+    <header class="mx-auto text-center">
+
+        <p class="p-2">Bringing Families Together ❤️‍🔥</p>
+        <h1 class="text-3xl font-bold">Your Path to Adoption <br> Starts Here</h1>
+        <p class="p-2">It is a long established fact that a reader will be distracted by the readable content of a page
+            when looking
+            at <br> its layout. The point of using Lorem Ipsum is that it has a.</p>
+        <button class="btn none m-4 btn-success">view more</button>
+        <img class="mx-auto" src="images/pet.webp" alt="">
+
+        <p class="text-3xl font-bold">Adopt Your Best Friend</p>
+        <p class="m-3">It is a long established fact that a reader will be distracted by the readable content of a <br>
+            page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+
+        <div id="add-btn" class="flex p-10 m-5 justify-evenly">
+
+        </div>
+
+
+    </header>
+
+    <div class="flex mb-5 justify-between mx-20">
+        <h1 class="font-bold text-xl">Best Deal For you</h1>
+        <p class="p-4 w-120px h-20px rounded text-white" style="background-color: rgba(14, 122, 129, 1)">Sort By Price
+        </p>
+    </div>
+
+    <main class="flex justify-center gap-4 mx-auto">
+
+        <section id="dideos" class="grid grid-cols-2 w-980px lg:grid-cols-3">
+
+        </section>
+
+
+        <section id="id" class="shadow-md rounded-md w-312px h-460px grid grid-cols-2">
+            
+        </section>
+
+    </main>
+    <!-- w-312px h-460px -->
+    <!-- Open the modal using ID.showModal() method -->
+    <button id="showModalData" class="btn hidden" onclick="customModal.showModal()">open modal</button>
+    <dialog id="customModal" class="modal">
+        <div class="modal-box">
+            <div id="modal-content"></div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+
+
+    <button id="showModal" class="btn hidden" onclick="custom.showModal()">open modal</button>
+    <dialog id="custom" class="modal">
+        <div class="modal-box">
+            <div id="content-btn"></div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+
+
+
+    <footer class="footer mx-auto text-base-content p-10 mx-auto bg-black">
+        <div class="text-white ml-20 py-5">
+          <div class="flex gap-3 text-gray">
+            <img src="images/logo.webp" alt="">
+            <h2 class="font-bold text-xl text-white">Peddy</h2>
+          </div>
+  
+          <p>Location: av. Washington 165, NY CA</p>
+          <p>54003</p>
+          <p>Phone: +31 85 964 47 25</p>
+          <p>Email: info@yourdomain.com</p>
+          <p>Openings hours: 9.00 AM - 5.00 PM</p>
+          <!-- </div>
+       <div> -->
+          <div class="flex gap-5">
+            <img src="./images/icons8-facebook-48.png" alt="facebook loading">
+            <img src="./images/icons8-twitter-48.png" alt="twiter loading">
+            <img src="./images/icons8-youtube-48.png" alt="youtube pic">
+            <img src="./images/icons8-instagram-48.png" alt="insta pic">
+          </div>
+        </div>
+  
+  
+        <nav class="text-white py-10">
+          <h6 class="footer-title">useful links</h6>
+          <a class="link link-hover">Home</a>
+          <a href="AboutUs.html" class="link link-hover">About Us</a>
+          <a href="animal.html" class="link link-hover">Animals</a>
+          <a class="link link-hover">Foundation</a>
+          <a class="link link-hover">Contact</a>
+        </nav>
+        <nav class="ml-16 py-10">
+          <h6 class="footer-title text-white">Drop a Message</h6>
+          <input class="w-52 rounded bg-neutral-900 p-4 h-10" type="text" placeholder="Enter your email">
+          <button class="btn btn-active btn-accent w-52 text-white font-bold text-xl">Subscribe</button>
+        </nav>
+  
+      </footer>
+    <a href="index.html"></a>
+    <script src="Fetch.js"></script>
+</body>
+
+</html>
